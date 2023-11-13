@@ -18,15 +18,7 @@
     position: relative;
 }
 .nav__notification{
-    display: flex;
- background-color: tomato;
- height: 20px;
- width:20px;
- border-radius: 10px;
- justify-content: center;
- align-items: center;
- color: white;
- font-weight: 600; 
+  
  position: absolute;
  left:20px;
  bottom: 15px;
