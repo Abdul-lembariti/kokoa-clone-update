@@ -92,3 +92,21 @@ span {
   margin-top: -35px;
   margin-left: 23px;
 }
+.open-post__rate:hover i {
+  will-change: transform;
+  animation: heartAnimation 1s linear infinite;
+}
+@keyframes heartAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}

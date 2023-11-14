@@ -5,7 +5,8 @@
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgba(128, 128, 128, 0.288);
+    margin-bottom: 120px;
+    /* background-color: rgba(128, 128, 128, 0.288); */
 }
 .status-bar__column{
     width: 33%;
@@ -22,5 +23,8 @@
     justify-content: flex-end;
 }
 .status-bar__column .fa-battery-full{
-    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px; 
 }
