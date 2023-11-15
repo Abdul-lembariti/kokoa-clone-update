@@ -24,16 +24,15 @@
   color: rgba(0, 0, 0, 0.5);
 }
 @keyframes hideSplashScreen {
-  from{
+  from {
     opacity: 1;
   }
-  to{
+  to {
     opacity: 0;
     visibility: hidden;
   }
-  
 }
-#splash-screen{
+#splash-screen {
   background-color: var(--yellow);
   position: absolute;
   height: 100vh;
