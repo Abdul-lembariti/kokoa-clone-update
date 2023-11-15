@@ -136,7 +136,7 @@
 }
 .reply input {
   padding: 12px;
-  width: 100%;
+  width: 96%;
   border: var(--main-border);
   border-radius: 20px;
   transition: all 0.6s ease-in-out;
@@ -183,9 +183,9 @@
 
 .reply:focus-within input {
   width: 93vw;
-  transform: translateX(-70px) translateY(-85px);
+  transform: translateX(-60px) translateY(-70px);
 }
 .reply:focus-within {
-  transform: translateY(80px);
+  transform: translateY(75px);
   background-color: rgba(0, 0, 0, 0, 0);
 }
