@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header,
@@ -19,7 +19,16 @@
   top: 10px;
   z-index: 1;
 }
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .chat {
   margin-top: 100px;
   display: flex;
@@ -32,18 +41,50 @@
   padding: 10px 10px;
   border-radius: 25px;
   margin-bottom: 25px;
+  animation: fadeIn 0.8s linear;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
+  animation: fadeOut 0.8s linear;
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row:last-child {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  animation: fadeOut 0.8s linear;
+}
+
 .message-row img {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   margin-right: 10px;
   margin-top: 15px;
+  animation: fadeIn 0.8s linear;
 }
 .message__info {
   display: flex;
@@ -98,6 +139,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.6s ease-in-out;
 }
 .reply__column:last-child > i,
 .reply__column:last-child button {
@@ -121,9 +163,30 @@
 .reply__column button:active {
   outline: none;
 }
-.reply i{
-  opacity: 0.5; 
+.reply i {
+  opacity: 0.5;
 }
-.reply__column button i{
-opacity: 1;
+.reply__column button i {
+  opacity: 1;
+}
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button{
+  transition:opacity .3s ease-in-out ;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-70px) translateY(-85px);
+
+}
+.reply:focus-within{
+  transform: translateY(80px);
+  background-color: rgba(0,0,0,0,0);
 }
