@@ -1,9 +1,8 @@
-.more-icons {
-  border-bottom: var(--bellow);
+.more__column{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  bottom: var(--main-border);
-  color: var(--below);
+  border-bottom: var(--bellow);
 }
 .more-icons__icon {
   display: flex;
@@ -11,9 +10,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 35px;
+  margin-bottom: 23px;
 }
+
 .more-screen__channel {
-  margin-top: 23px;
+  margin-top: 35px;
 }
 
 .more-screen__channel-header {
@@ -24,7 +25,8 @@
 
 .more-screen__column{
   display: flex;
-  gap: 10px;
+  /* justify-content: space-between; */
+  gap: 30px;
 }
 .more-screen__img{
   display: flex;

@@ -33,7 +33,9 @@
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  /* align-items: flex-end; */
 }
 
 .user-component__time {
@@ -43,5 +45,6 @@
 .user-component__column span{
   display: flex;
   color: rgba(0, 0, 0, 0.5);
-  
+  gap: 2px;
+  align-items: center;
 }
